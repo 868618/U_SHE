@@ -1,0 +1,20 @@
+// ESLint 检查 .vue 文件需要单独配置编辑器：
+// https://eslint.vuejs.org/user-guide/#editor-integrations
+{
+  "extends": ["taro/vue"],
+  // "extends": ["plugin:vue/recommended", "@vue/prettier"],
+  "rules": {
+    "no-console": "warn",
+    "no-unused-vars": 2,
+    "indent": ["error", 2],
+    // 不允许使用空函数
+    "no-empty-function": "error",
+    // 禁止在变量定义之前使用他
+    "no-use-before-define": "error",
+    "arrow-spacing": "error",
+    "no-multiple-empty-lines": "error",
+    // 禁止在单行内非缩进情况出现多个空格
+    "no-multi-spaces": "error",
+    "object-curly-spacing": ["error", "never"]
+  }
+}
