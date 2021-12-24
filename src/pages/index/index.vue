@@ -5,25 +5,20 @@
 </template>
 
 <script>
-import './index.less'
+import "./index.less"
 
 export default {
-  data () {
+  data() {
     return {
-      msg:  'Hello world!'
-
-      
+      msg: "Hello world!",
     }
   },
-
 
   created() {
     const a = () => {
       return 3
     }
     console.log(999, a)
-  }
-
-
+  },
 }
 </script>
