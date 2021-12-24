@@ -1,8 +1,8 @@
 {
   "miniprogramRoot": "./dist",
-  "projectname": "WechatAppDemo",
+  "projectname": "U_SHE",
   "description": "",
-  "appid": "touristappid",
+  "appid": "wxbcf0ef890f5faf55",
   "setting": {
     "urlCheck": true,
     "es6": false,
