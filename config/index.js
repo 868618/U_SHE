@@ -1,3 +1,5 @@
+const path = require('path')
+
 const config = {
   projectName: 'WechatAppDemo',
   date: '2021-12-23',
@@ -14,6 +16,8 @@ const config = {
   },
   copy: {
     patterns: [
+      { from: "src/custom-tab-bar", to: "dist/custom-tab-bar" },
+      { from: "custom_assets", to: "dist/custom_assets" },
     ],
     options: {
     }
@@ -40,6 +44,12 @@ const config = {
           generateScopedName: '[name]__[local]___[hash:base64:5]'
         }
       }
+    },
+
+    compile: {
+      exclude: [
+        path.resolve(__dirname, '..', 'src/assets/images/test.png'),
+      ]
     }
   },
   h5: {
@@ -59,6 +69,10 @@ const config = {
         }
       }
     }
+  },
+
+  alias: {
+    '@/components': path.resolve(__dirname, '..', 'src/components'),
   }
 }
 

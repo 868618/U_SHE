@@ -1,0 +1,23 @@
+<view class="custom_tab_bar" wx:if="{{ isTabbarPage }}">
+    <view class="tab_bar {{ selected == '0' ? 'active': '' }}" bindtap="switchTab" mark:tab="index" mark:selected="0">
+        <block wx:if="{{ selected == '0' }}">
+            <image src="/custom_assets/hart_active.png" /> <text>每日推荐</text>
+        </block>
+        <image wx:else src="/custom_assets/hart_unselected.png" />
+    </view>
+
+    <view class="tab_bar" bindtap="switchTab">
+        <image src="/custom_assets/chat.png" />
+    </view>
+
+    <view class="tab_bar" bindtap="switchTab">
+        <image src="/custom_assets/seek.png" />
+    </view>
+
+    <view class="tab_bar {{ selected == '3' ? 'active': '' }}" bindtap="switchTab" mark:tab="mine" mark:selected="3">
+        <block wx:if="{{ selected == '3' }}">
+            <image src="/custom_assets/mine_active.png" /> <text>我的</text>
+        </block>
+        <image src="/custom_assets/mine.png" wx:else />
+    </view>
+</view>

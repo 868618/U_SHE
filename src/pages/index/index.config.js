@@ -1,3 +1,4 @@
 export default {
-  navigationBarTitleText: '首页'
+  navigationBarTitleText: '每日推荐',
+  usingComponents: {}
 }
