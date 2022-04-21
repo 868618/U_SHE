@@ -28,14 +28,16 @@ export default {
       Taro.login().then(({ code }) => {
         // console.log("code", code)
         Taro.getUserInfo().then((res) => {
+          console.log("res", res)
           const { iv, encryptedData } = res
-          const { gender: sex, nickName: nickname } = res.userInfo
+          const { gender: sex, nickName: nickname, avatarUrl: img } = res.userInfo
           login({
             iv,
             encryptedData,
             sex,
             nickname,
             code,
+            img,
           }).then((result) => {
             console.log("result", result)
           })
