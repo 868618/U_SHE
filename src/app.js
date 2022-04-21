@@ -17,7 +17,7 @@ const store = new Vuex.Store({
 
 const App = {
   onShow (options) {
-    console.log(options)
+    // console.log(options)
   },
   store,
   render(h) {

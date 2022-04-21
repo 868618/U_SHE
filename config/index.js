@@ -1,7 +1,7 @@
 const path = require('path')
 
 const config = {
-  projectName: 'WechatAppDemo',
+  projectName: '婉伴',
   date: '2021-12-23',
   designWidth: 750,
   deviceRatio: {
@@ -73,6 +73,8 @@ const config = {
 
   alias: {
     '@/components': path.resolve(__dirname, '..', 'src/components'),
+    '@/api': path.resolve(__dirname, '..', 'src/api'),
+    '@/tool': path.resolve(__dirname, '..', 'src/tool'),
   }
 }
 
